@@ -38,7 +38,8 @@
     
  }
 
- #szol{text-align: center;
+ #szol{
+  text-align: center;
 flex: auto;
 padding: 35px;
 }
@@ -48,7 +49,143 @@ padding: 35px;
 width: 100%;
 
 }
+ 
 
+.row{ justify-content: center;}
+
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .skills .skill-group {
+            width: calc(50% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills ul li {
+            background: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .skills ul li:hover {
+            transform: scale(1.02);
+        }
+        .skills ul li img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+
+        }
+
+
+
+      
+        .job {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .job img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .job h2 {
+            margin-bottom: 5px;
+        }
+        .job h3 {
+            color: #333;
+        }
+        .job p {
+            margin: 10px 0;
+        }
+
+       
+
+
+        .contact-info {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info img {
+            width: 32px;
+            margin-right: 10px;
+        }
+        .contact-info i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #4CAF50;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            display: none;
+            transition: right 0.5s;
+        }
 
 
 
@@ -81,14 +218,17 @@ width: 100%;
         <p><a class="btn btn-secondary" href="#">View details »</a></p>
       </div>
         
-      <h1 class="mt-5">PÁR SZÓ RÓLAM</h1>
-      <p class="lead">A "programozó" egy elég tág munkakör, de jelen esetben indokolt. Az évek során a programozás több területén is szereztem tapasztalatokat, többek között web-, szoftver- és mobilalkalmazások fejlesztésében, valamint adatbázisok tervezésében és karbantartásában is elmélyítettem tudásom. Mindezek mellett egyéb kézségeket is sikerült elsajátítanom, mint például a grafikai tervezés, videókészítés, képszerkesztés.
-        Miért válassz engem? Számomra az ügyfél a legfontosabb és mindent megteszek, hogy ötleted a tervezéstől eljusson a megvalósításig. <code class="small"></code>  <code class="small":></code> &gt; </code>.</p>
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Pár szó rólam</h1>
+          <p class="col-md-8 fs-4">A "programozó" egy elég tág munkakör, de jelen esetben indokolt. Az évek során a programozás több területén is szereztem tapasztalatokat, többek között web-, szoftver- és mobilalkalmazások fejlesztésében, valamint adatbázisok tervezésében és karbantartásában is elmélyítettem tudásom. Mindezek mellett egyéb kézségeket is sikerült elsajátítanom, mint például a grafikai tervezés, videókészítés, képszerkesztés.
+            Miért válassz engem? Számomra az ügyfél a legfontosabb és mindent megteszek, hogy ötleted a tervezéstől eljusson a megvalósításig.</p>
           
-                 <h1 id="szol">Szolgáltatásaim</h1>
+        </div>
+      </div>
 
 
-
+           <h2 id="szol">Szolgáltatásaim</h2>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
@@ -99,39 +239,39 @@ width: 100%;
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-           <img src="képek/images.jpeg" alt="">
+           <img src="képek/mobile-app-development-q86wxljmdo3la4w6bgfjgxazy6vbm76s94vp2npbxc.jpg" alt="">
             <div class="card-body">
               <p class="card-text"> MOBIL ALKALMAZÁS FEJLESZTÉS</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <img src="képek/images (3).jpeg" alt="">
+            <img src="képek/IT_tanacsadas.jpeg" alt="">
             <div class="card-body">
               <p class="card-text">IT TANÁCSADÁS ÉS KONZULTÁCIÓ</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                
               </div>
             </div>
           </div>
@@ -145,9 +285,9 @@ width: 100%;
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                
               </div>
             </div>
           </div>
@@ -160,9 +300,9 @@ width: 100%;
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                
               </div>
             </div>
           </div>
@@ -176,13 +316,96 @@ width: 100%;
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+               
               </div>
             </div>
           </div>
         </div>
+
+
+        <div class="container">
+          <section class="skills">
+              <div class="skill-group">
+                  <h2>Hard Skillek</h2>
+                  <ul>
+                      <li><img src="képek/programming.svg" alt="Programozás ikon">Programozás (Java, Python, C++)</li>
+                      <li><img src="képek/database-icon.webp" alt="Adatbázis ikon">Adatbázis-kezelés (SQL, NoSQL)</li>
+                      <li><img src="képek/networking.svg" alt="Hálózatkezelés ikon">Hálózatkezelés</li>
+                      <li><img src="képek/system-administrator-sysadmin.svg" alt="Rendszeradminisztráció ikon">Rendszeradminisztráció</li>
+                      <li><img src="képek/web-development.svg" alt="Webfejlesztés ikon">Webfejlesztés (HTML, CSS, JavaScript)</li>
+                  </ul>
+              </div>
+  
+              <div class="skill-group">
+                  <h2>Soft Skillek</h2>
+                  <ul>
+                      <li><img src="képek/communication.svg" alt="Kommunikáció ikon">Kommunikáció</li>
+                      <li><img src="képek/team.svg" alt="Csapatmunka ikon">Csapatmunka</li>
+                      <li><img src="képek/problem-solver-solution-problem-solving-skill.svg" alt="Problémamegoldás ikon">Problémamegoldás</li>
+                      <li><img src="képek/time-management-clock.svg" alt="Időgazdálkodás ikon">Időgazdálkodás</li>
+                      <li><img src="képek/4211539-200.png" alt="Rugalmasság ikon">Rugalmasság</li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+
+
+      <div class="container">
+        <h1>Munka Tapasztalatok</h1>
+        <div class="job">
+            <img src="képek/images 2.png" alt="Cég neve #1 logója">
+            <div>
+                <h2>Mészáros M pro </h2>
+                <h3>Pozíció: Programozó</h3>
+                <p>Időtartam: 2020 - Jelenleg</p>
+                <p>Főbb feladatok:</p>
+                <ul>
+                    <li>Webalkalmazások fejlesztése JavaScript és Node.js segítségével.</li>
+                    <li>Adatbázis-kezelés MongoDB-vel.</li>
+                    <li>Felhasználói felületek tervezése és implementálása.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job">
+            <img src="képek/title-head2.png" alt="Cég neve #2 logója">
+            <div>
+                <h2>Rendszer.G? </h2>
+                <h3>Pozíció: Rendszergazda</h3>
+                <p>Időtartam: 2018 - 2020</p>
+                <p>Főbb feladatok:</p>
+                <ul>
+                    <li>Hálózati infrastruktúra felügyelete és karbantartása.</li>
+                    <li>Új szerverek telepítése és konfigurálása.</li>
+                    <li>Felhasználói támogatás.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job">
+            <img src="képek/bkndesign-10.jpg" alt="Cég neve #3 logója">
+            <div>
+                <h2>Grafik word</h2>
+                <h3>Pozíció: Grafikus</h3>
+                <p>Időtartam: 2017 - 2018</p>
+                <p>Főbb feladatok:</p>
+                <ul>
+                    <li>Logók és marketing anyagok tervezése.</li>
+                    <li>Weboldalak vizuális tervezése és UI/UX elemek kialakítása.</li>
+                    <li>Digitális illusztrációk készítése.</li>
+                </ul>
+            </div>
+        </div>
+       
+
+    
+
+
+
+
+
+
+
 
         
            <h1 id="pro">Projekteim</h1>
@@ -191,36 +414,128 @@ width: 100%;
 
 
 
-
-  
-  
-
-           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="képek/weblap-fejlesztes-alapjai.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">WEBOLDALAK, SZOFTVEREK, KOMPLEX RENDSZEREK KARBANTARTÁSA</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+           <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                   <img src="képek/Képernyőkép 2024-05-24 123402.png" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Pollák shop</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">több</button>
+                          
+                        </div>
+                        
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
-              </div>
-            </div>
-
-          
-  
-
-
-      
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="képek/Képernyőkép 2024-06-06 083906.png" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Rush royal</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">több</button>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="képek/Képernyőkép 2024-06-06 091754.png" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Brawl stars</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">több</button>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
         
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="képek/Képernyőkép 2024-06-06 092212.png" alt="">
+                      <p class="card-text">Bootstrap</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">több</button>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+             
+                <div class="container">
+                  <h1>Elérhetőségek</h1>
+                  <div class="contact-info">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div>
+                          <h2>Cím</h2>
+                          <p>1234  Jancsi 5.</p>
+                          <p>csanytelekalsó, Magyarország</p>
+                      </div>
+                  </div>
+                  <div class="contact-info">
+                      <i class="fas fa-phone-alt"></i>
+                      <div>
+                          <h2>Telefonszám</h2>
+                          <p>+36 1 234 5678</p>
+                      </div>
+                  </div>
+                  <div class="contact-info">
+                      <i class="fas fa-envelope"></i>
+                      <div>
+                          <h2>Email</h2>
+                          <p>hamisemail@gmail.com</p>
+                      </div>
+                  </div>
+                  <div class="contact-info">
+                      <i class="fas fa-globe"></i>
+                      <div>
+                          <h2>Weboldal</h2>
+                          <p><a href="https://www.facebook.com/szentesenergyfitness/">Engergy.Fitness</a></p>
+                      </div>
+                  </div>
+              </div>
 
-          
-       
-       
+             
+
+              
+            <footer>
+                <p>&copy; z oldalon található tartalom szabadon felhasználható.</p>
+            </footer>
+        
+            <script>
+                window.onscroll = function() {showFooter()};
+        
+                function showFooter() {
+                    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                        document.querySelector('footer').style.right = 'unset';
+                        document.querySelector('footer').style.left = '0';
+                        document.querySelector('footer').style.display = 'block';
+                    } else {
+                        document.querySelector('footer').style.left = 'unset';
+                        document.querySelector('footer').style.right = '0';
+                        document.querySelector('footer').style.display = 'none';
+                    }
+                }
+            </script>
+            
+               
 </body>
 </html>
